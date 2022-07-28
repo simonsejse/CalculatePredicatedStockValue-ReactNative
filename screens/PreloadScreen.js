@@ -15,10 +15,10 @@ const PreloadScreen = () => {
   return (
     <SafeAreaView className='flex-1 justify-center items-center'>
       <Animatable.Image
+        source={require('../assets/preloader.gif')}
         animation='slideInUp'
         iterationCount={1}
         className='h-48 w-48'
-        source={require('../assets/preloader.webp')}
       ></Animatable.Image>
       <Animatable.Text
         animation='slideInUp'

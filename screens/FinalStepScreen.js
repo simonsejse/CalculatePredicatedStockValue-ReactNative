@@ -67,21 +67,11 @@ const FinalStepScreen = () => {
                 Estimeret formue
               </Text>
               <Text className='text-2xl text-white text-center'>
-                <Text className='text-green-500'>
-                  <CurrencyFormat
-                    value={result}
-                    decimalSeparator='.'
-                    decimalScale={0}
-                    displayType={'text'}
-                    thousandSeparator={true}
-                  />
-                </Text>{' '}
-                kr.
+                <Text className='text-green-500'>{result.toFixed()}</Text> kr.
               </Text>
             </View>
           </LinearGradient>
         </View>
-
         <TouchableOpacity
           onPress={() => navigation.navigate('Home')}
           className='bg-green-500 rounded-lg m-5 p-5'
